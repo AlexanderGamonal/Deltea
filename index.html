@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deltea · Té helado saludable en Lima</title>
+  <meta name="description" content="Deltea: té helado natural, sin azúcares dañinos, hecho con ingredientes que benefician tu salud. Lima Metropolitana, tienda y delivery.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#inicio" class="logo"><img src="assets/img/logo.png" alt="" width="44" height="44">Deltea</a>
+  <button class="cart-btn" id="cartOpen" aria-label="Abrir carrito">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.600h8.600a2 2 0 0 0 2-1.500L22 7H6"/></svg>
+    <span class="cart-btn__count" id="cartCount" hidden>0</span>
+  </button>
+  <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <nav class="nav__links" id="menu">
+    <a href="#tes">Nuestros tés</a>
+    <a href="#saberes">¿Sabías qué?</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#pedir" class="btn btn--small">Pedir</a>
+  </nav>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+    <div class="hero__text">
+      <p class="eyebrow">Un emprendimiento con propósito</p>
+      <h1>Deltea</h1>
+      <p class="hero__lead">Té helado natural que cuida tu salud. Sin compuestos dañinos ni exceso de azúcar, con una experiencia de bienestar en cada vaso.</p>
+      <a href="#tes" class="btn">Pedir ahora</a>
+      <a href="#tes" class="btn btn--ghost">Ver sabores</a>
+    </div>
+    <div class="hero__img">
+      <img src="assets/img/hero.jpg" alt="Tres vasos de té helado Deltea. ¿Por qué beber té? Ingredientes orgánicos, buen sabor, fácil de llevar, saludable. Promoción: 12 soles por 2" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Foto del té (assets/img/hero.jpg)'}))">
+    </div>
+  </section>
+
+  <section id="tes" class="section">
+    <h2>Nuestros 5 tés</h2>
+    <p class="section__sub">Todos preparados primero en caliente y luego enfriados con hielo.</p>
+    <p class="promo">🎉 ¡Promoción! <strong>2 tés por S/ 12</strong> (combina los sabores que quieras). Precio regular: S/ 7.00 c/u.</p>
+    <div class="cards">
+      <article class="card">
+        <img src="assets/img/te-verde.jpg" alt="Té verde helado" onerror="this.className='ph';this.removeAttribute('src')">
+        <h3>Té verde</h3>
+        <p class="tag">20 – 45 mg de cafeína</p>
+        <p>Protege las funciones cognitivas, estimula el metabolismo celular y ayuda al control de peso.</p>
+        <p class="for">Ideal para: adultos activos.</p>
+      </article>
+      <article class="card">
+        <img src="assets/img/te-negro.jpg" alt="Té negro helado" onerror="this.className='ph';this.removeAttribute('src')">
+        <h3>Té negro</h3>
+        <p class="tag">40 – 70 mg de cafeína</p>
+        <p>Su aporte moderado de cafeína y teaflavinas ayuda a mejorar la concentración mental sostenida.</p>
+        <p class="for">Ideal para: quien necesita energía sin picos de ansiedad.</p>
+      </article>
+      <article class="card">
+        <img src="assets/img/te-blanco.jpg" alt="Té blanco helado" onerror="this.className='ph';this.removeAttribute('src')">
+        <h3>Té blanco</h3>
+        <p class="tag">15 – 30 mg de cafeína</p>
+        <p>Efecto antienvejecimiento: al ser el menos procesado, conserva polifenoles que combaten el daño celular.</p>
+        <p class="for">Ideal para: cuidado de la piel y bienestar.</p>
+      </article>
+      <article class="card">
+        <img src="assets/img/te-rooibos.jpg" alt="Té de rooibos helado" onerror="this.className='ph';this.removeAttribute('src')">
+        <h3>Té de rooibos</h3>
+        <p class="tag">100% libre de cafeína</p>
+        <p>Rico en aspalatina (antiinflamatorio) y relajante. Hidrata y no interfiere con la absorción de hierro.</p>
+        <p class="for">Ideal para: niños, embarazadas y quienes quieren una bebida reconfortante a cualquier hora.</p>
+      </article>
+      <article class="card">
+        <img src="assets/img/te-rojo.jpg" alt="Té rojo helado" onerror="this.className='ph';this.removeAttribute('src')">
+        <h3>Té rojo</h3>
+        <p class="tag">30 – 70 mg de cafeína</p>
+        <p>Mejora la digestión y contribuye a disminuir los niveles de colesterol malo (LDL).</p>
+        <p class="for">Ideal para: personas propensas a digestiones lentas.</p>
+      </article>
+    </div>
+    <p class="note">Información referencial basada en datos de la OMS y la FAO.</p>
+  </section>
+
+  <section id="saberes" class="section section--cream">
+    <div class="two">
+      <div>
+        <h2>¿Sabías qué?</h2>
+        <p>Tomar tu té frío preparándolo primero en caliente y luego añadiéndole hielo mantiene el 100% de sus propiedades medicinales: el agua caliente extrae todos los antioxidantes y aceites esenciales de las plantas, flores y especias, y el hielo solo refresca la bebida sin destruir sus beneficios.</p>
+      </div>
+      <div>
+        <h2>El problema</h2>
+        <p>Según nuestras encuestas, la mayoría consume bebidas azucaradas, y buscan algo <strong>refrescante</strong> (61,4%). Deltea es la alternativa: igual de refrescante, pero buena para ti.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="section">
+    <h2>Nuestro propósito</h2>
+    <div class="two">
+      <div class="panel">
+        <h3>Misión</h3>
+        <p>Brindar bebidas naturales, refrescantes y de alta calidad, elaboradas con frutas frescas, que satisfagan la sed de nuestros clientes de manera saludable y accesible, con atención rápida, amable y responsable con el medio ambiente.</p>
+      </div>
+      <div class="panel">
+        <h3>Visión</h3>
+        <p>Ser una empresa líder en el mercado de las bebidas y contentar a nuestros clientes no solo con un buen producto, sino como una experiencia inolvidable con nuestra calidad de productos.</p>
+      </div>
+    </div>
+
+    <h3 class="center">Apoyamos la Agenda 2030</h3>
+    <ul class="ods">
+      <li><strong>ODS 3</strong> Salud y bienestar: ofrecemos bebidas para la salud.</li>
+      <li><strong>ODS 8</strong> Trabajo decente: damos oportunidades a personas en situación vulnerable, con una recompensa justa.</li>
+      <li><strong>ODS 12</strong> Producción responsable: ingredientes orgánicos, libres de pesticidas, producidos de forma sostenible.</li>
+    </ul>
+  </section>
+
+  <section id="pedir" class="section section--wine">
+    <h2>Pide tu Deltea</h2>
+    <p>Vendemos en Lima Metropolitana, en puntos físicos y con envío a domicilio. Arma tu pedido y lo confirmamos por WhatsApp.</p>
+    <button type="button" class="btn btn--light" id="cartOpen2">Ver mi pedido</button>
+    <a href="#" class="btn btn--ghost-light" data-wa>Escríbenos por WhatsApp</a>
+    <a href="https://www.instagram.com/deltea._pe" class="btn btn--ghost-light" target="_blank" rel="noopener">@deltea._pe en Instagram</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div>
+      <a href="#inicio" class="logo"><img src="assets/img/logo.png" alt="" width="44" height="44">Deltea</a>
+      <p>Té helado natural · Lima Metropolitana</p>
+    </div>
+    <div class="social" aria-label="Redes sociales">
+      <a href="https://www.instagram.com/deltea._pe" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@deltea.pe" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M16.6 2h-3.2v13.2a2.8 2.8 0 1 1-2.8-2.8c.3 0 .5 0 .8.1V9.2a6 6 0 1 0 5.2 5.9V8.6a7.4 7.4 0 0 0 4.3 1.4V6.8a4.3 4.3 0 0 1-4.3-4.8z"/></svg>
+      </a>
+      <a href="https://wa.me/51907997473" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.3L2 22l4.8-1.2A11 11 0 1 0 20.5 3.5zM12 20a9 9 0 0 1-4.6-1.3l-.3-.2-2.8.7.8-2.7-.2-.3A9 9 0 1 1 12 20zm5-6.7c-.3-.1-1.6-.8-1.9-.9s-.5-.1-.7.1-.8.9-.9 1.1-.3.2-.6.1a7.400 7.400 0 0 1-2.200-1.400 8.200 8.200 0 0 1-1.500-1.900c-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5c0-.1-.7-1.600-.9-2.200s-.5-.5-.7-.5h-.6a1.200 1.200 0 0 0-.9.4 3.700 3.700 0 0 0-1.100 2.700 6.400 6.400 0 0 0 1.300 3.400 14.600 14.600 0 0 0 5.600 5c.8.300 1.400.5 1.900.6a4.500 4.500 0 0 0 2.100-.1 3.400 3.400 0 0 0 2.200-1.500 2.700 2.700 0 0 0 .2-1.500c-.1-.1-.3-.2-.6-.3z"/></svg>
+      </a>
+    </div>
+  </div>
+  <p class="footer__credits">Desarrollado por André D'Alessandro Coronado Landeo · Lucero del Cielo Fernández Vidaurre · Valeria Alexandra Gamonal de la Torre · Brescia Luciana Inocente Paulino · Andrés Gabriel Pinto Blanco</p>
+  <p class="footer__copy">© 2026 Deltea · Un emprendimiento con propósito · Lima, Perú</p>
+</footer>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
+  <div class="drawer__head">
+    <h2 id="drawerTitle">Tu pedido</h2>
+    <button class="drawer__close" id="cartClose" aria-label="Cerrar carrito">✕</button>
+  </div>
+
+  <div class="drawer__body">
+    <p class="empty" id="cartEmpty">Aún no agregas tés. Elige tus sabores favoritos 🍵</p>
+    <ul class="items" id="cartItems"></ul>
+
+    <div class="totals" id="cartTotals" hidden>
+      <div><span>Subtotal</span><span id="tSub">S/ 0.00</span></div>
+      <div class="totals__promo" id="tPromoRow" hidden><span id="tPromoLabel">Promo 2 x S/ 12</span><span id="tPromo">- S/ 0.00</span></div>
+      <div class="totals__total"><span>Total</span><span id="tTotal">S/ 0.00</span></div>
+      <p class="hint" id="promoHint" hidden></p>
+    </div>
+
+    <form id="orderForm" novalidate hidden>
+      <h3>Tus datos</h3>
+      <label>Nombre y apellido
+        <input name="nombre" type="text" autocomplete="name" required>
+      </label>
+      <fieldset>
+        <legend>¿Cómo lo recibes?</legend>
+        <label class="radio"><input type="radio" name="entrega" value="Delivery" checked> Delivery</label>
+        <label class="radio"><input type="radio" name="entrega" value="Recojo en punto de venta"> Recojo</label>
+      </fieldset>
+      <div id="deliveryFields">
+        <label>Dirección
+          <input name="direccion" type="text" autocomplete="street-address">
+        </label>
+        <label>Distrito
+          <input name="distrito" type="text">
+        </label>
+        <label>Referencia (opcional)
+          <input name="referencia" type="text">
+        </label>
+      </div>
+      <label>Comentarios (opcional)
+        <textarea name="notas" rows="2" placeholder="Ej: poca azúcar, hora de entrega…"></textarea>
+      </label>
+      <p class="form__error" id="formError" role="alert" hidden></p>
+      <button type="submit" class="btn btn--wa">Enviar pedido por WhatsApp</button>
+      <button type="button" class="link" id="cartClear">Vaciar carrito</button>
+    </form>
+  </div>
+</aside>
+
+<script src="js/main.js"></script>
+</body>
+</html>
